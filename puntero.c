@@ -16,17 +16,17 @@ printf("%p %d \n", x, a);
 
 
 char letra = 'a', c;
-char *ptr;
-ptr= &letra;
-c = *ptr;
+char *ptr; // a ptr se le asiga la direccion de letra 
+ptr= &letra;  // a "c" se le asigna el valor de la letra a travez del puntero ptr
+c = *ptr; // se imprime la direccion de letra y el valor de c 
  
 printf("%p %c \n", ptr, c);
 float decimal = 3.14, dec; 
 float *ptrf;  
-ptrf= &decimal;
-dec = *ptrf;
+ptrf= &decimal; //  a ptrf se asigna la direccion de decimal 
+dec = *ptrf; //a dec dse le asigna el valor de decimal a traves del puntero ptrf
 
-printf("%p %f", ptrf, dec);
+printf("%p %f", ptrf, dec); //se imprime la direccion de decimal  y el valor de ptrf
 return 0;
 
 }
