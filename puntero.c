@@ -20,8 +20,13 @@ char *ptr;
 ptr= &letra;
 c = *ptr;
 
-printf("%p %c", ptr, c);
+printf("%p %c \n", ptr, c);
+float decimal = 3.14, dec;
+float *ptrf;
+ptrf= &decimal;
+dec = *ptrf;
 
+printf("%p %f", ptrf, dec);
 return 0;
 
 }
